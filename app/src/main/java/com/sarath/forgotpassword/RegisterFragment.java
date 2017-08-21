@@ -13,9 +13,10 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.learn2crack.loginregistration.models.ServerRequest;
-import com.learn2crack.loginregistration.models.ServerResponse;
-import com.learn2crack.loginregistration.models.User;
+
+import com.sarath.forgotpassword.models.ServerRequest;
+import com.sarath.forgotpassword.models.ServerResponse;
+import com.sarath.forgotpassword.models.User;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -104,7 +105,7 @@ public class RegisterFragment extends Fragment implements View.OnClickListener{
             public void onResponse(Call<ServerResponse> call, retrofit2.Response<ServerResponse> response) {
 
                 ServerResponse resp = response.body();
-                Snackbar.make(getView(), resp.getMessage(), Snackbar.LENGTH_LONG).show();
+               // Snackbar.make(getView(), resp.getMessage(), Snackbar.LENGTH_LONG).show();
                 progress.setVisibility(View.INVISIBLE);
             }
 

@@ -11,7 +11,7 @@ import retrofit2.http.POST;
 
 public interface RequestInterface {
 
-    @POST("learn2crack-login-register/")
+    @POST("index.php")
     Call<ServerResponse> operation(@Body ServerRequest request);
 
 }

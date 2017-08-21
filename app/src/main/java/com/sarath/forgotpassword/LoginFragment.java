@@ -15,6 +15,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 
+import com.sarath.forgotpassword.models.ServerRequest;
+import com.sarath.forgotpassword.models.ServerResponse;
+import com.sarath.forgotpassword.models.User;
 
 import retrofit2.Call;
 import retrofit2.Callback;
